@@ -2,6 +2,7 @@ fastapi
 uvicorn[standard]
 sqlmodel
 asyncpg
+psycopg2-binary
 alembic
 python-dotenv
 passlib[bcrypt]

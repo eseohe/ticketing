@@ -9,19 +9,23 @@ import Tickets from './Tickets'
 import TicketDetail from './TicketDetail'
 import Escalations from './Escalations'
 
+function PageWrapper({ children }: { children: React.ReactNode }) {
+  return <div className="max-w-5xl mx-auto px-6 py-10">{children}</div>
+}
+
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col bg-slate-50">
+      <div className="min-h-screen flex flex-col bg-white">
         <Header />
-        <main className="flex-1 container mx-auto px-4 py-8">
+        <main className="flex-1">
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/tickets" element={<Tickets />} />
-            <Route path="/tickets/:id" element={<TicketDetail />} />
-            <Route path="/escalations" element={<Escalations />} />
+            <Route path="/dashboard" element={<PageWrapper><Dashboard /></PageWrapper>} />
+            <Route path="/tickets" element={<PageWrapper><Tickets /></PageWrapper>} />
+            <Route path="/tickets/:id" element={<PageWrapper><TicketDetail /></PageWrapper>} />
+            <Route path="/escalations" element={<PageWrapper><Escalations /></PageWrapper>} />
           </Routes>
         </main>
         <Footer />

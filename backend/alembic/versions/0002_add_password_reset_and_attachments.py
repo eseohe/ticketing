@@ -1,6 +1,6 @@
 """add password_reset_tokens and attachments tables with RLS
 
-Revision ID: 0002_add_password_reset_and_attachments
+Revision ID: 0002_reset_attachments
 Revises: 0001_create_tenants_and_rls
 Create Date: 2026-03-26 00:00:00.000000
 """
@@ -8,7 +8,7 @@ from alembic import op
 import sqlalchemy as sa
 
 # revision identifiers, used by Alembic.
-revision = '0002_add_password_reset_and_attachments'
+revision = '0002_reset_attachments'
 down_revision = '0001_create_tenants_and_rls'
 branch_labels = None
 depends_on = None

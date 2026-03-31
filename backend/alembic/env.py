@@ -13,9 +13,11 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# Set the SQLAlchemy URL from the environment if provided
+# Set the SQLAlchemy URL from the environment if provided.
+# Alembic uses a synchronous engine, so strip the asyncpg driver prefix.
 db_url = os.environ.get('DATABASE_URL')
 if db_url:
+    db_url = db_url.replace('postgresql+asyncpg://', 'postgresql://')
     config.set_main_option('sqlalchemy.url', db_url)
 
 # add your model's MetaData object here
