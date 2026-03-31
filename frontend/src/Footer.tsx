@@ -42,7 +42,7 @@ export default function Footer() {
               <span className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
                 <Ticket size={16} strokeWidth={2.5} className="text-white" />
               </span>
-              Ticketing
+              Savvy
             </Link>
             <p className="text-sm leading-relaxed text-gray-500">
               Multi-tenant support, built for scale. From startups to enterprise.
@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-          <span>© {new Date().getFullYear()} Ticketing. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Savvy. All rights reserved.</span>
           <span>Built with React + FastAPI</span>
         </div>
       </div>

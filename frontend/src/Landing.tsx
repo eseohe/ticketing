@@ -437,7 +437,7 @@ export default function Landing() {
               ))}
             </div>
             <blockquote className="text-2xl font-semibold text-gray-900 leading-snug mb-8">
-              "Ticketing cut our first-response time by 60%. The multi-tenant setup meant we could
+              "Savvy cut our first-response time by 60%. The multi-tenant setup meant we could
               onboard clients in minutes instead of weeks."
             </blockquote>
             <div className="flex items-center justify-center gap-3">
