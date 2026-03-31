@@ -1,0 +1,6 @@
+{
+  "name": "Test Company",
+  "slug": "testco",
+  "admin_email": "admin@testco.com",
+  "admin_password": "pass123"
+}

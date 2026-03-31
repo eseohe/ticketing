@@ -1,0 +1,16 @@
+Files created by scaffold scripts:
+- backend/requirements.txt
+- backend/Dockerfile
+- backend/.env.example
+- backend/app/main.py
+- frontend/package.json
+- frontend/vite.config.ts
+- frontend/index.html
+- frontend/src/main.tsx
+- frontend/src/App.tsx
+- frontend/src/styles.css
+- frontend/tailwind.config.cjs
+- frontend/postcss.config.cjs
+- frontend/Dockerfile
+- .github/workflows/ci.yml
+- docker-compose.yml
